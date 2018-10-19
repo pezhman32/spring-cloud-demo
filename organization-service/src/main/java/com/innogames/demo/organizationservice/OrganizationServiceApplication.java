@@ -1,12 +1,12 @@
-package com.innogames.demo.cloud;
+package com.innogames.demo.organizationservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringCloudDemoApplication {
+public class OrganizationServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudDemoApplication.class, args);
+		SpringApplication.run(OrganizationServiceApplication.class, args);
 	}
 }

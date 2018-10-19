@@ -1,4 +1,4 @@
-package com.innogames.demo.cloud;
+package com.innogames.demo.organizationservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,10 +7,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringCloudDemoApplicationTests {
+public class OrganizationServiceApplicationTests {
 
 	@Test
 	public void contextLoads() {
 	}
-
 }
