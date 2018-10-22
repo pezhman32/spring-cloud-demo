@@ -1,4 +1,4 @@
-package com.innogames.demo.organizationservice;
+package com.innogames.demo.reportservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EnableDiscoveryClient same as EnableEurekaClient
-public class OrganizationServiceApplication {
+public class ReportServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrganizationServiceApplication.class, args);
+		SpringApplication.run(ReportServiceApplication.class, args);
 	}
 }

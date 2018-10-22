@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RefreshScope
-public class TestRest {
+public class OrgRest {
 
 	@Value("${ig.cake-name}")
 	private String cakeForInnoGamers;
