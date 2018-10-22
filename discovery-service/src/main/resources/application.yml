@@ -1,0 +1,14 @@
+server:
+    port: 8761 # default eureka port
+spring:
+    application:
+        name: discovery-service
+
+eureka:
+    instance:
+        leaseRenewalIntervalInSeconds: 10
+    client:
+        register-with-eureka: false
+        fetch-registry: false
+#        statusPageUrlPath: /admin/info
+#        healthCheckUrlPath: /admin/health
