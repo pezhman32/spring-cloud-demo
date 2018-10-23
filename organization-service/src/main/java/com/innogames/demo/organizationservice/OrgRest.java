@@ -12,8 +12,9 @@ public class OrgRest {
 	@Value("${ig.cake-name}")
 	private String cakeForInnoGamers;
 
-	@RequestMapping("/")
-	public String test() {
+	@RequestMapping("/org/testVariable")
+	public String getTestVariable() {
+		System.out.println(cakeForInnoGamers);
 		return cakeForInnoGamers;
 	}
 }

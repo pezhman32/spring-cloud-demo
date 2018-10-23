@@ -9,24 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class ReportRest {
+public class ReportFeignRest {
 
 	@Autowired
-	private DiscoveryClient discoveryClient;
+	private OrganizationClient organizationClient;
 
-	@RequestMapping("/report/all-organizations")
+	@RequestMapping("/report/feign/report-all-organizations")
 	public String test() {
-		return serviceUrl();
-	}
-
-	private String serviceUrl() {
-		List<ServiceInstance> list = discoveryClient.getInstances("ORGANIZATION-SERVICE");
-		StringBuilder sb = new StringBuilder();
-		if (list != null && list.size() > 0) {
-			sb.append("\n").append(
-					list.get(0).getUri());
-		}
-
-		return sb.toString();
+		return organizationClient.getTestVariable();
 	}
 }

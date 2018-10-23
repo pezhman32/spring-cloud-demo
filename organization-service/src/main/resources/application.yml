@@ -15,3 +15,7 @@ management:
         web:
             exposure:
                 include: refresh
+
+eureka:
+    instance:
+        instance-id: ${spring.application.name}:${random.int} # to let multiple instance register at the same time
