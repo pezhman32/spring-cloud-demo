@@ -7,3 +7,8 @@ spring:
             server:
                 git:
                     uri: https://github.com/pezhman32/spring-cloud-demo-config.git
+
+logging:
+    level:
+        ROOT: INFO
+        org.springframework.cloud.config: DEBUG
