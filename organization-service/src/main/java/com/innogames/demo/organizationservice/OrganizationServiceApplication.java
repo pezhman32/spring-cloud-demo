@@ -6,7 +6,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EnableDiscoveryClient same as EnableEurekaClient
 public class OrganizationServiceApplication {
 
 	public static void main(String[] args) {
